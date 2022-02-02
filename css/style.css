@@ -1,68 +1,77 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 header {
-    background-color: rgb(27, 67, 177);
-    height: 9vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(27, 67, 177);
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header a {
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 main {
-    background-color: rgb(223, 50, 130);
-    color: white;
-    height: 91vh;
+  background-color: rgb(223, 50, 130);
+  color: white;
+  height: 91vh;
 }
 
 .actorlist {
-    width: 80%;
-    margin: auto;
-    list-style: none;
-    padding: 50px 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 80%;
+  margin: auto;
+  list-style: none;
+  padding: 50px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.actorlist li{
-    border: white solid 1px;
-    min-height: 45px;
-    display: grid;
-    grid-template-columns: 45px 1fr 30px;
-    align-items: center;
+.actorlist li {
+  border: white solid 1px;
+  min-height: 45px;
+  display: grid;
+  grid-template-columns: 45px 1fr 30px;
+  align-items: center;
 }
 
 .actorlist li > * {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    text-decoration: none;
-    color: white;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  text-decoration: none;
+  color: white;
 }
 
 .list_number {
-    justify-content: center;
+  justify-content: center;
 }
 
 .actor_name {
-    border-left: 1px solid white;
-    padding-left: 10px;
+  border-left: 1px solid white;
+  padding-left: 10px;
 }
 
-.actorlist a:hover {
-    background-color: rgb(27, 67, 177);
+.actor_name:hover {
+  background-color: rgb(27, 67, 177);
+}
+
+.pop_up {
+  position: absolute;
+  background-color: indigo;
+  width: 100%;
+  height: 100vh;
 }
