@@ -25,12 +25,22 @@ function showActor(actor, index) {
     // append
     parent.appendChild(copy);
 
-    // call popUp
+    // create some global variables
+    document.querySelector(".actor").textContent = actor.fullname;
+    document.querySelector(".movie_name").textContent = actor.movie;
+
+    // select all .actor_name elements
     const actorsName = document.querySelectorAll(".actor_name");
-    actorsName.forEach((actorName) => {
-        actorName.addEventListener("click", () => {
+
+    // call popUp for each
+    actorsName.forEach((actor) => {
+        actor.addEventListener("click", () => {
+            // console.log(actor);
+
+            // open popUp
             let popUp = document.querySelector(".pop_up");
             popUp.style.setProperty("visibility", "visible");
+            // close popUp
             let closeButton = document.querySelector(".close_button");
             closeButton.addEventListener("click", () => {
                 popUp.style.setProperty("visibility", "hidden");
