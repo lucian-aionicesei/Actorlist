@@ -1,20 +1,3 @@
-// POP UP
-
-const actors = document.querySelectorAll(".actor_name");
-
-actors.forEach((actor) => {
-    actor.addEventListener("click", openPopUp);
-});
-
-function openPopUp() {
-    let popUp = document.querySelector(".pop_up");
-    popUp.style.setProperty("visibility", "visible");
-    let closeButton = document.querySelector(".close_button");
-    closeButton.addEventListener("click", () => {
-        popUp.style.setProperty("visibility", "hidden");
-    });
-}
-
 // FETCHING DATA 
 
 fetch("../json/actors.json")
@@ -43,5 +26,15 @@ function showActor(actor, index) {
     parent.appendChild(copy);
 
     // call popUp
-    
+    const actorsName = document.querySelectorAll(".actor_name");
+    actorsName.forEach((actorName) => {
+        actorName.addEventListener("click", () => {
+            let popUp = document.querySelector(".pop_up");
+            popUp.style.setProperty("visibility", "visible");
+            let closeButton = document.querySelector(".close_button");
+            closeButton.addEventListener("click", () => {
+                popUp.style.setProperty("visibility", "hidden");
+            });
+        });
+    });
 }
