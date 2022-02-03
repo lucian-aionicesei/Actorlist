@@ -1,6 +1,6 @@
 // FETCHING DATA 
 
-fetch("../json/actors.json")
+fetch("./json/actors.json")
     .then(res => res.json())
     .then(function (data) {
         handleActorList(data);
